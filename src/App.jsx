@@ -10,12 +10,12 @@ import FriendsChannel from "./pages/friends-channel"
 import CAF from "./pages/CAF"
 
 //routing
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom"
+import { HashRouter, Routes, Route, Router } from "react-router-dom"
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<About />}/>
         <Route path="/register" element={<SignIn />}/>
@@ -29,7 +29,7 @@ function App() {
         <Route path="/CAF" element={<CAF />} /> 
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
